@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Gloock&family=Molle&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Puddles&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.checkList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border: 2px solid #c7c1b5;
+    width: 600px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 23px -6px rgba(155, 140, 139, 0.46);
+}
+.checkList input{
+    display: none;
+}
+.checkList label{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #c7c1b5;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkList p{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 30px;
+    color: #c7c1b5;
+}
+.checkList label svg{
+    display: none;
+    fill: #c8d5b9;
+}
+.checkList input:checked~label{
+    border-color: #c8d5b9;
+}
+.checkList:has(input:checked) label svg{
+    display: block;
+}
+.checkList:has(input:checked) p{
+    color: #c8d5b9;
+    text-decoration: line-through;
+}
+#add{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    color: #4a7c59;
+    background-color: #c8d5b9;
+    font-size: 40px;
+}
+#write{
+    color: #4a7c59;
+    border: 2px solid #c8d5b9;
+    background-color: #c8d5b9;
+    width: 520px;
+    height: 50px;
+    font-size: 40px;
+    border-radius: 5px;
+    margin: 10px;
+    margin-top: 30px;
+    font-family: 'Berkshire Swash', cursive;
+
+}
+.box{
+    border: #8a9482 4px solid;
+    border-radius: 10px;
+    width: 630px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+.name{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 30px;
+    color: #c7c1b5;
+    margin: 10px;
+    margin-left: 250px;
+
+}
+hr{
+    border: #8a9482 2px solid;
+}
+.delete{
+    border-radius: 50px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    background-color: #aa716b;
+    color: #78504a;
+}
+.all{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(184,166,155);
+    background: radial-gradient(circle, rgba(184,166,155,1) 0%, rgba(96,77,60,1) 100%);
+}
+.for{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 30px;
+    color: #c7c1b5;
+    margin: 20px;
+    margin-left: 220px;
+}
+.notes{
+    margin: 11px;
+    background-color: #c8d5b9;
+    color: #4a7c59;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 30px;
+    border: #8a9482 3px solid;
+    border-radius: 5px;
+}
